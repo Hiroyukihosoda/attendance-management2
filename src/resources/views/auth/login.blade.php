@@ -51,10 +51,10 @@
 </div>
 
   <footer class="footer">
-        <div class="footer__inner">
-            <a>
-            Atte, inc.
-            </a>
-        </div>
-    </footer>
+    <div class="footer__inner">
+      <a>
+        Atte, inc.
+      </a>
+    </div>
+  </footer>
 @endsection
