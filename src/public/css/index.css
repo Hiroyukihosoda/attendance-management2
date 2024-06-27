@@ -53,6 +53,10 @@ h2 {
     padding-bottom: 0px;
 }
 
+.footer {
+    /* margin-top: 10px; */
+}
+
 .footer__inner {
     text-align: center;
     font-size: 14px;

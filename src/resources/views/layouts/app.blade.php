@@ -7,7 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Attendance Management</title>
   <link rel="stylesheet" href="{{ asset('css/sanitize.css') }}">
-  <link rel="stylesheet" href="{{ asset('css/common.css') }}">  
+  <link rel="stylesheet" href="{{ asset('css/common.css') }}"> 
   @yield('css')
 </head>
 
@@ -22,10 +22,16 @@
           <ul class="header-nav">
             @if (Auth::check())
             <li class="header-nav__item">
-              <a class="header-nav__link" href="/mypage">ホーム</a>
+              <form class="home" action="/" method="get">
+                @csrf
+                <button class="header-nav__button">ホーム</button>
+              </form>
             </li>
             <li class="header-nav__item">
-              <a class="header-nav__link" href="/mypage">日付一覧</a>
+              <form class="date" action="/date" method="get">
+                @csrf
+                <button class="header-nav__button">日付一覧</button>
+              </form>
             </li>
             <li class="header-nav__item">
               <form class="form" action="/logout" method="post">

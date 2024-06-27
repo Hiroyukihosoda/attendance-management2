@@ -11,25 +11,31 @@
 
 <div class="attendance__content">
   <div class="login-form__heading">
-    <h2>さん お疲れ様です!</h2>
+    @foreach ($users as $user)
+    <h2>{{ $user->name }}さん お疲れ様です!</h2>
+    @endforeach
   </div>
 
   <div class="attendance__panel">
-    <form class="attendance__button">
+    <form class="attendance__button" action="/work_start" method="post">
+      @csrf
       <button class="attendance__button-submit" type="submit">勤務開始</button>
     </form>
 
-    <form class="attendance__button">
+    <form class="attendance__button" action="/work_end" method="post">
+      @csrf
       <button class="attendance__button-submit" type="submit">勤務終了</button>
     </form>
   </div>
 
   <div class="attendance__panel">
-    <form class="attendance__button">
+    <form class="attendance__button" action="/break_start" method="post">
+      @csrf
       <button class="attendance__button-submit" type="submit">休憩開始</button>
     </form>
 
-    <form class="attendance__button">
+    <form class="attendance__button" action="/break_end" method="post">
+      @csrf
       <button class="attendance__button-submit" type="submit">休憩終了</button>
     </form>
 </div>

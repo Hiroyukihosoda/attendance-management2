@@ -1,0 +1,12 @@
+.date__content {
+    background-color: rgb(244, 242, 242);
+    padding-bottom: 230px;
+    padding-top: 200px;
+}
+
+.footer__inner {
+    text-align: center;
+    font-size: 14px;
+    font-weight: bold;
+    padding-top: 10px;
+}
