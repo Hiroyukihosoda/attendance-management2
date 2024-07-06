@@ -7,7 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Attendance Management</title>
   <link rel="stylesheet" href="{{ asset('css/sanitize.css') }}">
-  <link rel="stylesheet" href="{{ asset('css/common.css') }}"> 
+  <link rel="stylesheet" href="{{ asset('css/common.css') }}">
   @yield('css')
 </head>
 
@@ -28,7 +28,7 @@
               </form>
             </li>
             <li class="header-nav__item">
-              <form class="date" action="/date" method="get">
+              <form class="date" action="/attendance" method="get">
                 @csrf
                 <button class="header-nav__button">日付一覧</button>
               </form>

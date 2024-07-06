@@ -19,7 +19,7 @@
   <div class="attendance__panel">
     <form class="attendance__button" action="/work_start" method="post">
       @csrf
-      <button class="attendance__button-submit" type="submit">勤務開始</button>
+      <button class="attendance__button-submit" type="datetime-local" name="work_start_time">勤務開始</button>
     </form>
 
     <form class="attendance__button" action="/work_end" method="post">

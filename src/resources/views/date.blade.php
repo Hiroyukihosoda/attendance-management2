@@ -7,7 +7,7 @@
 @section('content')
 
 <div class="date__content">
-    <h1>日付一覧</h1>
+    <h1>{{ \Carbon\Carbon::now()->format("Y/m/d") }}</h1>
 </div>
 
 

@@ -16,10 +16,10 @@ class CreateAttendancesTable extends Migration
         Schema::create('attendances', function (Blueprint $table) {
             $table->id();
             $table->foreignId('user_id')->constrained('users');
-            $table->time('work_start_time');
-            $table->time('work_end_time');
-            $table->time('break_start_time');
-            $table->time('break_end_time');
+            $table->dateTime('work_start_time');
+            $table->dateTime('work_end_time');
+            $table->dateTime('break_start_time');
+            $table->dateTime('break_end_time');
             $table->timestamps();
         });
     }

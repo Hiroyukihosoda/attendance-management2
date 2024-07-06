@@ -18,6 +18,6 @@ use App\Http\Controllers\AttendanceController;
 Route::middleware('auth')->group(function() {
     Route::get('/', [AuthController::class, 'index']);
 });
-Route::get('/date', [AuthController::class, 'date']);
+Route::get('/attendance', [AuthController::class, 'date']);
 Route::post('/work_start', [AttendanceController::class, 'workStart']);
 
