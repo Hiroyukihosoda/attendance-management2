@@ -10,3 +10,40 @@
     font-weight: bold;
     padding-top: 10px;
 }
+
+.todo__content {
+    margin: 0 auto;
+    padding: 60px 15px;
+    max-width: 1230px;
+}
+
+.todo-table {
+    margin: 30px auto;
+    width: 70%;
+    text-align: left;
+}
+
+.todo-table__inner {
+    width: 100%;
+}
+
+.todo-table__row {
+    border-top: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+}
+
+.date__header {
+    text-align: center;
+    padding-bottom: 12px;
+    width: 100%;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.todo-table__item {
+    padding: 12px;
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+}
+

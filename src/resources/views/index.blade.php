@@ -11,19 +11,19 @@
 
 <div class="attendance__content">
   <div class="login-form__heading">
-    @foreach ($users as $user)
     <h2>{{ $user->name }}さん お疲れ様です!</h2>
-    @endforeach
   </div>
 
   <div class="attendance__panel">
     <form class="attendance__button" action="/work_start" method="post">
       @csrf
+      <input type="hidden" name="work_start_time" value="{{ now() }}">
       <button class="attendance__button-submit" type="datetime-local" name="work_start_time">勤務開始</button>
     </form>
 
     <form class="attendance__button" action="/work_end" method="post">
       @csrf
+      <input type="hidden" name="work_start_time" value="{{ now() }}">
       <button class="attendance__button-submit" type="submit">勤務終了</button>
     </form>
   </div>

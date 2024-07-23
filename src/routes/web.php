@@ -20,4 +20,7 @@ Route::middleware('auth')->group(function() {
 });
 Route::get('/attendance', [AuthController::class, 'date']);
 Route::post('/work_start', [AttendanceController::class, 'workStart']);
+Route::post('/work_end', [AttendanceController::class, 'workEnd']);
+Route::post('/break_start', [AttendanceController::class, 'breakStart']);
+Route::post('/break_end', [AttendanceController::class, 'breakEnd']);
 
